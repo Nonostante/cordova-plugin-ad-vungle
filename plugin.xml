@@ -1,7 +1,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-ad-vungle"
-        version="1.0.62">
+        version="1.0.63">
 		
     <name>Cordova Vungle plugin</name>
     <description>Show vungle rewarded video ad</description>
@@ -27,12 +27,13 @@
 		</config-file>
 		
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
-			<activity
-			  android:name="com.vungle.publisher.FullScreenAdActivity"
-			  android:configChanges="keyboardHidden|orientation|screenSize"
-			  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+			<activity android:name="com.vungle.publisher.VideoFullScreenAdActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
-			<service android:name="com.vungle.publisher.VungleService" android:exported="false"/>
+			<activity android:name="com.vungle.publisher.MraidFullScreenAdActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
 		</config-file>
 		
 		<config-file target="AndroidManifest.xml" parent="/*">
@@ -51,10 +52,9 @@
 		
       	<source-file src="src/android/Vungle.java" target-dir="src/com/cranberrygame/cordova/plugin/ad/vungle" />					  
 
-	    <source-file src="src/android/dagger-1.2.2.jar" target-dir="libs" />		
-	    <source-file src="src/android/javax.inject-1.jar" target-dir="libs" />		
-	    <source-file src="src/android/nineoldandroids-2.4.0.jar" target-dir="libs" />		
-	    <source-file src="src/android/vungle-publisher-adaptive-id-3.3.0.jar" target-dir="libs" />
+	    <source-file src="src/android/dagger-2.4.jar" target-dir="libs" />		
+	    <source-file src="src/android/javax.inject-1.jar" target-dir="libs" />				
+	    <source-file src="src/android/vungle-publisher-adaptive-id-4.0.2.jar" target-dir="libs" />
 		<!-- cranberrygame start: com.google.playservices -->
 <!--		
 		<source-file src="src/android/google-play-services.jar" target-dir="libs" />

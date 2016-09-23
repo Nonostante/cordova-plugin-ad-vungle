@@ -313,7 +313,7 @@ public class Vungle extends CordovaPlugin {
 		}
 
 		@Override
-		public void onAdEnd(boolean wasCallToActionClicked) {//cranberrygame
+		public void onAdEnd(boolean wasSuccessfulView, boolean wasCallToActionClicked) {//cranberrygame
 			// Called when the user leaves the ad and control is returned to your application
 			Log.d(LOG_TAG, "onAdEnd");
 			
