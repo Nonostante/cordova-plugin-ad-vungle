@@ -92,7 +92,7 @@
 		<resource-file src="src/ios/VungleSDK.embeddedframework/Resources/vg_cta.png" />
 		<resource-file src="src/ios/VungleSDK.embeddedframework/Resources/vg_mute_off.png" />
 		<resource-file src="src/ios/VungleSDK.embeddedframework/Resources/vg_mute_on.png" />
-		<resource-file src="src/ios/VungleSDK.embeddedframework/Resources/vg_timer.png" />
+		<resource-file src="src/ios/VungleSDK.embeddedframework/Resources/vg_privacy.png" />
 		
 		<framework src="AdSupport.framework" />
 		<framework src="AudioToolbox.framework" />
